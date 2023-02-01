@@ -1,0 +1,84 @@
+body {
+  background: #2d3142;
+}
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0 150px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Button Styles */
+
+.button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #bfc0c0;
+  margin: 20px 20px 20px 20px;
+  color: #bfc0c0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.7em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+p {
+  color: #bfc0c0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+#connectbtn {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#connectbtn:hover {
+  border-color: lightseagreen;
+  /* box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+    0 0 60px #ff1f71; */
+}
+
+#connectbtn p {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+#translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background: lightseagreen;
+
+  position: absolute;
+  transition: all 0.3s ease-Out;
+}
+
+#connectbtn:hover #translate {
+  left: 0;
+}
+
+#connectbtn:hover p {
+  color: white;
+}
+
+#connectbtn:active p {
+  color: #ff1f71;
+}
+
+@media screen and (min-width: 1000px) {
+  #container {
+    width: 50%;
+  }
+}
